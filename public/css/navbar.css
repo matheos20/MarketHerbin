@@ -1,0 +1,443 @@
+
+.icon_logo {
+    width: 26px;
+    height: 26px;
+    fill: #158375;
+    position: absolute;
+    z-index: 10;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: -18px
+}
+
+#top-head {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    margin: auto;
+    position: absolute;
+    background-color: #b5ecec;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    margin-bottom: 30px;
+    margin-right: 6px;
+    /* Adds spacing between the icon and text */
+}
+
+.navbar_tab {
+    text-align: center;
+    font-size: 16px;
+    /* Adjust as needed */
+}
+
+.outer-shape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-shape {
+    /* Add any styles if needed */
+}
+
+#top-head .inner {
+    width: 40%;
+}
+
+/*nav style*/
+#top-head nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/*nav link style*/
+#top-head nav ul li a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#top-head nav ul li a:hover {
+    color: #2666a3;
+}
+
+#nav_toggle {
+    display: none;
+}
+
+.header_logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.head_button {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.login {
+    padding: 12px;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.login_Sign {
+    padding: 12px;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+
+
+/*============================
+mobile style
+============================*/
+@media screen and (max-width:680px) {
+
+    /*hamburger menu style*/
+    #nav_toggle {
+        display: block;
+        width: 38px;
+        height: 30px;
+        position: relative;
+        top: 24px;
+        z-index: 100;
+        margin-left: auto;
+        padding-right: 10px
+    }
+
+    #nav_toggle div {
+        position: relative;
+    }
+
+    /*hamburger menu close style*/
+    #nav_toggle span {
+        display: block;
+        height: 2px;
+        background: #404040;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    #nav_toggle span:nth-child(1) {
+        top: 0px;
+    }
+
+    #nav_toggle span:nth-child(2) {
+        top: 10px;
+    }
+
+    #nav_toggle span:nth-child(3) {
+        top: 20px;
+    }
+
+    /*hamburger menu open style*/
+    .open #nav_toggle span:nth-child(1) {
+        top: 10px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+    .open #nav_toggle span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+
+    .open #nav_toggle span:nth-child(3) {
+        top: 10px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    /*nav style*/
+    #top-head nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 1040px;
+        background: #fff;
+        z-index: 999;
+    }
+
+    .header_logo {
+        width: 60%;
+        display: flex;
+        justify-content: end;
+    }
+
+    #top-head nav ul {
+        display: block;
+        width: 80%;
+    }
+
+    #top-head nav ul li {
+        text-align: center;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    #top-head nav ul li:last-child {
+        border: none;
+    }
+
+    /*nav link style*/
+    #top-head nav ul li a {
+        display: block;
+    }
+
+    .head_button {
+        display: none;
+    }
+
+    .header_logo {
+        width: 60%;
+    }
+
+    .inner {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header_logo {
+        width: 60%;
+        display: flex;
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 681px) {
+    .top-head .inner {
+        width: 80%;
+    }
+
+    #top-head nav {
+        display: block;
+        position: static;
+        height: auto;
+        background: none;
+    }
+
+    #top-head nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .header_logo {
+        width: 21%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .head_button {
+        width: 18%;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    #top-head .inner {
+        width: 61%;
+    }
+}
+
+@media (min-width: 216px) and (max-width: 425px) {
+    .head_button {
+        width: 18%;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+        gap: 8px;
+        display: none;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 680px) {
+    .head_button {
+        width: 18%;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+        gap: 8px;
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    #top-head .inner {
+        width: 61%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    #top-head .inner {
+        width: 77%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    #top-head .inner {
+        width: 82%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1095px) {
+    #top-head .inner {
+        width: 61%;
+    }
+}
+
+.outer-shape {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #158375;
+    /* Border color */
+    clip-path: polygon(27% 11%, 76% 11%, 97% 53%, 74% 91%, 26% 91%, 4% 49%);
+}
+
+.inner-shape {
+    position: absolute;
+    top: 1px;
+    /* Border thickness */
+    left: 1px;
+    /* Border thickness */
+    right: 1px;
+    /* Border thickness */
+    bottom: 1px;
+    /* Border thickness */
+    background: rgb(250, 251, 252);
+    /* Inner content color */
+    clip-path: polygon(27% 11%, 76% 11%, 97% 53%, 74% 91%, 26% 91%, 4% 49%);
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: #158375;
+    position: absolute;
+    z-index: 10;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-left: 7px;
+
+}
+
+.navbar_tab {
+    font-size: 16px;
+    font-weight: 500;
+    color: #115c43;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.btn-10 {
+    background: #158375;
+    background: linear-gradient(0deg, #158375 0%, #b5ecec 100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.btn-10:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+.btn-10:hover {
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+.btn-10:hover:after {
+    background: #158375;
+    background: linear-gradient(0deg, #b5ecec 0%, #158375 100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.custom-btn_nav {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: #158375;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
